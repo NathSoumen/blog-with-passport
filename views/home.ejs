@@ -1,0 +1,17 @@
+<%- include ('partials/header') -%>
+
+<h1>Tis will be homw page</h1>
+
+<% data.forEach(function(blog){ %>
+    <hr>
+  <h1><%= blog.title %></h1>
+   <p><%= blog.doc %></p>
+   <a type="button" href="/blog/<%=blog._id%>">show More</a>
+   <hr>
+    
+<% }) %>
+
+
+<a type="buton" href="/user/logout">logOut</a>
+<%- include ('partials/footer') -%>
+

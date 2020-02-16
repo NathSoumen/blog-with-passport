@@ -1,0 +1,11 @@
+<%- include ('partials/header') -%>
+<div style="text-align: center;">
+    
+   <% for (let user of data) { %>
+        <h1>Email is <%= user.username %></h1>
+        <p><%=user._id%></p>
+    <% }%>
+ 
+</div>
+
+<%- include ('partials/footer') -%>

@@ -1,0 +1,25 @@
+<%- include ('partials/header') -%>
+<div style="text-align: center; width: 50%; margin-left: 25%; text-transform: uppercase;">
+    <h1>This will be new blog post page</h1>
+<form action="/blog" method="post" id="form">
+    <div class="form-group">
+        <div>
+            <label>Title</label>
+            <input class="form-control" type="text" name="blog[title]" placeholder="give your Article a title" required>
+        </div>
+       <div>
+           <label>Document</label>
+           <textarea class="form-control" id="exampleFormControlTextarea1" name="blog[doc]" rows="5" cols="30" required></textarea>
+       </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+</div>
+
+
+<%- include ('partials/footer') -%>
+
+
+
